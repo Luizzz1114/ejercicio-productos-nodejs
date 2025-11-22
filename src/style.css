@@ -1,0 +1,184 @@
+@import 'tailwindcss';
+
+/*--- CONFIGURACIÓN DE FUENTES ---*/
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-MediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-ExtraBoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  color: var(--color-slate-600);
+}
+
+::placeholder {
+  color: var(--color-slate-400);
+}
+
+th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+
+th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
+tbody > tr:last-child {
+  border: 0px;
+}
+
+thead::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-slate-300);
+  bottom: 0;
+  left: 0;
+}
+
+.router-link:hover {
+	opacity: 0.65;
+}
+
+.router-link--active {
+  border: 1px solid var(--color-indigo-300);
+	background-color: var(--color-indigo-100);
+	color: var(--color-indigo-500);
+}
+
+.router-link--active::after {
+	content: "";
+	position: absolute;
+	border-radius: 0.35rem;
+	width: 0.25rem;
+	height: 100%;
+	background-color: var(--color-indigo-500);
+	right: -18px;
+}
+
+.notificacion-enter-active,
+.notificacion-leave-active {
+  transition: all 0.3s ease;
+}
+
+.notificacion-enter-from,
+.notificacion-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.modal-enter-active,
+.modal-leave-active{
+  transition: all 0.5s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  transform: translateX(100%)
+}
+
+.fade-enter-active,
+.fade-leave-active{
+  transition: all 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.backdrop-enter-active,
+.backdrop-leave-active {
+  transition: opacity 0.1s;
+}
+
+.backdrop-enter-from,
+.backdrop-leave-to {
+  opacity: 0;
+}
+
+.breadCrumbs-enter-active {
+  transition: all 0.3s ease;
+}
+
+.breadCrumbs-enter-from {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.tabla-enter-active {
+  transition: all 0.3s ease;
+}
+
+.tabla-enter-from {
+  opacity: 0;
+  transform: translateY(-5px);
+}
