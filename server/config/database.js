@@ -4,7 +4,7 @@ import 'dotenv/config';
 const pool = new Pool({
 	user: process.env.PG_USER || 'postgres',
 	host: process.env.PG_HOST || 'localhost',
-	database: process.env.PG_DATABASE || 'productos_crud',
+	database: process.env.PG_DATABASE || 'ejercicio_productos',
 	password: process.env.PG_PASSWORD || 'tu_contraseña',
 	port: process.env.PG_PORT || 5432,
 });
